@@ -66,8 +66,8 @@ libraryDependencies ++= Seq(
   "org.influxdb" % "influxdb-java" % "2.14",
   "org.apache.kafka" %% "kafka" % "2.2.0" % "provided",
   "io.confluent" % "kafka-avro-serializer" % "5.1.2" % "provided",
-  "com.uber.hoodie" % "hoodie-spark" % "0.4.7" % "provided" excludeAll(excludeHoodieTimeLineService),
-  "com.uber.hoodie" % "hoodie-common" % "0.4.7" % "provided" excludeAll(excludeHoodieTimeLineService),
+//  "org.apache.hudi" % "hudi-spark" % "0.5.1-SNAPSHOT",
+//  "org.apache.hudi" % "hudi-common" % "0.5.1-SNAPSHOT",
   "org.apache.hive" % "hive-jdbc" % "1.2.2" % "provided" excludeAll(excludeNetty, excludeNettyAll)
 )
 
