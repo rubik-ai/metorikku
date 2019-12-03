@@ -1,0 +1,13 @@
+name: Metrorikku Scala CI
+
+on: [push]
+
+jobs:
+  build:
+    name: sbt build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run sbt clean scalastyle assembly
+        run: |
+          sbt clean scalastyle assembly
